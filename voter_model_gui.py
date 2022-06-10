@@ -73,7 +73,7 @@ class Gui:
         tk.Button(self.root,text="Start",font=(self.text_font, 15),background=self.bg_color,command=self.start_simulation).place(x=50,y=560)
         tk.Button(self.root,text="Pause",font=(self.text_font, 15),background=self.bg_color,command=self.pause_animation).place(x=140,y=560)
         tk.Button(self.root,text="Resume",font=(self.text_font, 15),background=self.bg_color,command=self.start_animation).place(x=230,y=560)
-        tk.Button(self.root,text="Stop",font=(self.text_font, 15),background=self.bg_color,command=self.end_animation).place(x=330,y=570)
+        tk.Button(self.root,text="Stop",font=(self.text_font, 15),background=self.bg_color,command=self.end_animation).place(x=330,y=560)
 
         tk.Button(self.root,text="Close program",font=(self.text_font, 15),background="#e61919",command=self.root.quit).place(x=130,y=620)
 
