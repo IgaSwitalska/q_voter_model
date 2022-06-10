@@ -39,3 +39,6 @@ The **Start** button starts the simulation, the **Pause** and **Resume** buttons
 The button **Stop** ends whole simulation.
 
 To close the application press **Close program**.
+
+<img src="demo/voter_model_demo.gif" alt="demo" width="750"/>
+
