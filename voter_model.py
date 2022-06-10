@@ -21,7 +21,7 @@ class Simulation:
         x - density of people with a positive opinion
         L - mesh dimension
         nonconf - 1: independence, 0: anticonformism 
-        rep - 1: with repetition, 0: without repetition
+        rep - 1: with repeating, 0: without repeating
         """
 
         self.fig = fig

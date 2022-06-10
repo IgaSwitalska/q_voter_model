@@ -62,22 +62,23 @@ class Gui:
         probability = tk.Scale(self.root,from_=0, to=1, orient="horizontal", resolution=0.01,variable=self.var_probability,length=300, background=self.bg_color)
         probability.place(x=50,y=370)
 
-        tk.Label(self.root, text="The probability of changing the state (for independence):",font=(self.text_font, 15),background=self.bg_color).place(x=50,y=420)
+        tk.Label(self.root, text="The probability of changing the state:",font=(self.text_font, 15),background=self.bg_color).place(x=50,y=420)
+        tk.Label(self.root, text="(for independence):",font=(self.text_font, 15),background=self.bg_color).place(x=50,y=450)
 
         self.var_independ_probability = tk.DoubleVar()
         self.independ_probability = tk.Scale(self.root,from_=0, to=1, orient="horizontal", resolution=0.01,variable=self.var_independ_probability,length=300, background=self.bg_color,state=tk.DISABLED)
-        self.independ_probability.place(x=50,y=460)
+        self.independ_probability.place(x=50,y=490)
 
 
-        tk.Button(self.root,text="Start",font=(self.text_font, 15),background=self.bg_color,command=self.start_simulation).place(x=50,y=530)
-        tk.Button(self.root,text="Pause",font=(self.text_font, 15),background=self.bg_color,command=self.pause_animation).place(x=140,y=530)
-        tk.Button(self.root,text="Resume",font=(self.text_font, 15),background=self.bg_color,command=self.start_animation).place(x=230,y=530)
-        tk.Button(self.root,text="Stop",font=(self.text_font, 15),background=self.bg_color,command=self.end_animation).place(x=330,y=530)
+        tk.Button(self.root,text="Start",font=(self.text_font, 15),background=self.bg_color,command=self.start_simulation).place(x=50,y=560)
+        tk.Button(self.root,text="Pause",font=(self.text_font, 15),background=self.bg_color,command=self.pause_animation).place(x=140,y=560)
+        tk.Button(self.root,text="Resume",font=(self.text_font, 15),background=self.bg_color,command=self.start_animation).place(x=230,y=560)
+        tk.Button(self.root,text="Stop",font=(self.text_font, 15),background=self.bg_color,command=self.end_animation).place(x=330,y=570)
 
-        tk.Button(self.root,text="Close program",font=(self.text_font, 15),background="#e61919",command=self.root.quit).place(x=130,y=590)
+        tk.Button(self.root,text="Close program",font=(self.text_font, 15),background="#e61919",command=self.root.quit).place(x=130,y=620)
 
         self.frame = tk.Frame(self.root)
-        self.frame.place(x=650, y=-20)
+        self.frame.place(x=670, y=-20)
 
     def simulation(self,fig):
 
