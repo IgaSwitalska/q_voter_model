@@ -17,7 +17,7 @@ You can do it via pip, writing in the command line:
 
 ``` pip install tkinter ```
 
-## About the aplication
+## About the application
 You have to run the program from the **voter_model_gui.py** file.
 
 Then you can choose which model you want to consider with anticonformism or with independence and how to draw neighbors.
