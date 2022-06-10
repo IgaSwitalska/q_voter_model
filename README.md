@@ -40,5 +40,6 @@ The button **Stop** ends whole simulation.
 
 To close the application press **Close program**.
 
+## Demo
 <img src="demo/voter_model_demo.gif" alt="demo" width="750"/>
 
